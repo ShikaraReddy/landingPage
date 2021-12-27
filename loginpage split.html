@@ -1,0 +1,178 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+
+select {
+        width: 170px;
+height:23px;
+        margin: 10px;
+    }
+
+
+.split {
+  height: 100%;
+  width: 50%;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-image : url("https://sharegate.com/app/uploads/2019/07/webinar-moveoffice365-nowwhat-cover2x-920x517.png");
+
+}
+
+.right {
+  right: 0;
+  background-image : url("https://sharegate.com/app/uploads/2019/07/webinar-moveoffice365-nowwhat-cover2x-920x517.png");
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 300px;
+  border-radius: 10%;
+}
+.button {
+  background-color: green; 
+  border: 29x solid blue;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#d1 {
+  box-sizing: content-box;  
+  width: 400px;
+  padding: 30px;  
+  border: 10px solid green;
+}
+.b2{
+ background-color: green; 
+  border: 29x solid blue;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+p {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+<h2>WHEN : 05-01-2021</h2>
+<h3>Time:10.00</h3>
+<h1>Learn python from scratch </h1>
+<h4>No clue on how to get started your carrer in Python software?</h4>
+<h3>Webinar starts in</h3>
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+<input type="button" value="Enroll now"class="b2">
+
+
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered"id="d1">        
+<form>
+<img src="https://image.freepik.com/free-photo/portrait-young-happy-business-woman-with-laptop-with-win-gesture_231208-245.jpg"  width="300" height="250">
+
+<table>
+<tr>
+<td><h2><label for="fname">Your name:</label></h2></td>
+  <td><h2><input type="text" id="fname" name="fname"></h2></td><br><br>
+</tr><tr>  
+<td><h2><label for="lname">Email:</label></h2></td>
+  <td></h2><input type="text" id="lname" name="lname"><br></h2><br>
+  </td>
+<tr>
+
+<td><h2><label for="cours">select course:</label></h2></td>
+<td>
+
+<select name="course" id="courses">
+ <option value="python">Python</option>
+<option value="DataScience">Datascience</option>
+ <option value="java">Java</option>
+  
+</select>
+</td>
+</tr>
+
+<table>
+<tr>
+<td>
+<input type="checkbox" id="ck"></input></td>
+<td>
+<label>I agree to receive commercial information from [company name]
+</label>
+</td>
+</tr>
+</table>
+<button class="button">Register Now</button>
+</form>
+
+
+  </div>
+</div>
+
+</body>
+</html> 
+
